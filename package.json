@@ -4,7 +4,8 @@
   "description": "A leaflet plugin that implements a quadtree",
   "author": "Isaac Besora Vilardaga <isaac.besora@gmail.com>",
   "scripts": {
-    "test": "./node_modules/.bin/mocha -r jsdom-global/register"
+    "test": "./node_modules/.bin/nyc ./node_modules/.bin/mocha -r jsdom-global/register",
+    "coverage": "./node_modules/.bin/nyc report --reporter=text-lcov | coveralls"
   },
   "main": "Leaflet.Quadtree.js",
   "repository": {
@@ -24,7 +25,9 @@
   "devDependencies": {
     "jsdom": "9.12.x",
     "jsdom-global": "2.1.x",
-    "mocha":"3.2.0"
+    "mocha":"3.2.x",
+    "nyc":"10.2.x",
+    "coveralls":"2.13.x"
   },
   "private": true, 
   "license": "BEERWARE"
