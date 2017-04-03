@@ -28,7 +28,6 @@
     "mocha":"3.2.x",
     "nyc":"10.2.x",
     "coveralls":"2.13.x"
-  },
-  "private": true, 
+  }, 
   "license": "BEERWARE"
 }
