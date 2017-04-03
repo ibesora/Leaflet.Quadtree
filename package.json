@@ -1,0 +1,30 @@
+{
+  "name": "leaflet-quadtree",
+  "version": "0.0.1",
+  "description": "A leaflet plugin that implements a quadtree",
+  "author": "Isaac Besora Vilardaga <isaac.besora@gmail.com>",
+  "scripts": {
+    "test": "mocha -r jsdom-global/register"
+  },
+  "main": "Leaflet.Quadtree.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibesora/Leaflet.Quadtree"
+  },
+  "bugs": {
+    "url": "https://github.com/ibesora/Leaflet.Quadtree/issues"
+  },
+  "keywords": [
+    "leaflet",
+    "quadtree"
+  ],
+  "dependencies": {
+    "leaflet": "1.0.x"
+  },
+  "devDependencies": {
+    "jsdom": "9.12.x",
+    "jsdom-global": "2.1.x"
+  },
+  "private": true, 
+  "license": "BEERWARE"
+}
