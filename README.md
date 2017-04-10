@@ -36,7 +36,7 @@ Constructs a quadtree object
 ```js
 var quadtree = L.quadtree(options);
 ```
-####Options
+#### Options
 <table>
 <thead>
 <th>Property</th>
@@ -59,6 +59,7 @@ var quadtree = L.quadtree(options);
 </tr>
 </tbody>
 </table>
+
 ### Add element to the quadtree
 Adds an element to the quatree. Any object that implements the [getLatLng()](http://leafletjs.com/reference-1.0.3.html#marker-getlatlng) or the [getBounds()](http://leafletjs.com/reference-1.0.3.html#polygon-getbounds) methods is supported
 ```js
@@ -66,6 +67,7 @@ var quadtree = L.quadtree(options);
 ...
 quadtree.add(marker);
 ```
+
 ### Get colliders
 Gets an array with the elements that fall inside the given bounds
 ```js
@@ -73,6 +75,7 @@ var quadtree = L.quadtree(options);
 ...
 var colliders = quadtree.getColliders(bounds);
 ```
+
 ### Get the possible colliders
 Gets an array with the elements that might fall inside the given bounds. This method is faster than the previous one although it's inexact, you can use it if you only need an upper bound of the visible elements. __This method returns the elements found on the leaf nodes that intersect the given bounds__
 ```js
@@ -87,6 +90,7 @@ var quadtree = L.quadtree(options);
 ...
 var stats = quadtree.getQuadtreeStats();
 ```
+
 ## License
 
 Copyright (c) 2017- ibesora (BEERWARE License)  
