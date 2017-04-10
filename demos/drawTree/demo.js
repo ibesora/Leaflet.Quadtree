@@ -21,45 +21,6 @@ function onMapClick(e)
 	for(var i=0, len=drawnLayers.length; i<len; ++i)
 		map.removeLayer(drawnLayers[i]);
 	drawnLayers = quadtree.draw(map);
-
-	console.log(JSON.stringify(quadtree.getQuadtreeStats()));
-
 }
 
 map.on('click', onMapClick);
-
-var marker = L.marker([0.0, 0.0]);
-quadtree.add(marker);
-marker.addTo(map);
-marker = L.marker([0.0, 50.0]);
-quadtree.add(marker);
-marker.addTo(map);
-marker = L.marker([50.0, 0.0]);
-quadtree.add(marker);
-marker.addTo(map);
-marker = L.marker([50.0, 50.0]);
-quadtree.add(marker);
-marker.addTo(map);
-marker = L.marker([12.5, 12.5]);
-quadtree.add(marker);
-marker.addTo(map);
-marker = L.marker([12.50, 37.50]);
-quadtree.add(marker);
-marker.addTo(map);
-marker = L.marker([38.50, 12.50]);
-quadtree.add(marker);
-marker.addTo(map);
-marker = L.marker([43.75, 37.50]);
-quadtree.add(marker);
-marker.addTo(map);
-marker = L.marker([45.75, 5.0]);
-quadtree.add(marker);
-marker.addTo(map);
-marker = L.marker([45.75, 7.5]);
-quadtree.add(marker);
-marker.addTo(map);
-marker = L.marker([45.75, 10.0]);
-quadtree.add(marker);
-marker.addTo(map);
-quadtree.draw(map);
-console.log(JSON.stringify(quadtree.getQuadtreeStats()));
