@@ -3,12 +3,11 @@ var quadtree = L.quadtree();
 var drawnLayers = [];
 var bDrawMap = false;
 
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiaWJlc29yYSIsImEiOiJjajNkYzFjZXAwMDAwMndwY2w4bDUyN2VtIn0.q1VJCpeta1ZYDNNZJcyPbw', {
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	maxZoom: 18,
 	attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
 		'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-		'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-	id: 'mapbox.streets'
+    'Imagery © <a href="http://mapbox.com">Mapbox</a>'
 }).addTo(map);
 
 L.geoJson(geoJSON, {
