@@ -7,7 +7,7 @@
 > Leaflet plugin that implements a quadtree for efficient retrieval of visible features' properties
 
 To see the plugin in action just click one of the following links:
-* __Huge number of elements:__ 1 million markers are created in random places and the quadtree is used to fetch the visible ones and add them to the map when it's moved. You can find the demo [here](https://ibesora.github.io/Leaflet.Quadtree/demos/1M/demo.html)
+* __Huge number of elements:__ 1 million markers are created in random places and the quadtree is used to fetch the visible ones and add them to the map when it's moved. You can find the demo [here](https://ibesora.github.io/Leaflet.Quadtree/demos/1M/demo.html) (__Alert:__ The browser tab might report itself as not working when creating the markers, just wait for it to finish)
 * __Visible feature properties retrieval:__ Sample data is loaded into the map and the quadtree is used to efficiently crawl the features of each visible element. You can find the demo [here](https://ibesora.github.io/Leaflet.Quadtree/demos/cullingGeoJSON/demo.html)
 * __Marker culling:__ On each click a numbered marker is created, the quadtree is updated and the visible elements' numbers are shown. You can find the demo [here](https://ibesora.github.io/Leaflet.Quadtree/demos/culling/demo.html)
 * __Quadtree construction:__ On each click a marker is created and the resulting quadtree is shown. You can find the demo [here](https://ibesora.github.io/Leaflet.Quadtree/demos/drawTree/demo.html)
