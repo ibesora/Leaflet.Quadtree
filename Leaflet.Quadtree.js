@@ -49,7 +49,12 @@
 		isLatLngBounds: function(elem)
 		{
 
-			return ('function' === typeof elem.getBounds);
+      // Unfortunately calling getBounds on a L.circle that hasn't been added
+      // to the map causes Leaflet to crash. This had been reported back in 2016
+      // but it hasn't been fixed https://github.com/Leaflet/Leaflet/issues/4978
+      // As a workaround we check if it's not a circle by checking for a radius
+      // property
+			return ('function' === typeof elem.getBounds) && !elem.options.radius;
 
 		},
 
