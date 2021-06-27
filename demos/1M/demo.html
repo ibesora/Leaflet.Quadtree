@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Quadtree demo</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+		<link rel="stylesheet" href="./demo.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="../../Leaflet.Quadtree.js"></script>
+	</head>
+	<body>
+    <div id="loading">
+      <div id="loading-text">
+        Creating 1 million random markers<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></div>
+      </div>
+    <div id="mapId"></div>
+    <div id="rightPanel">
+      This adds a million markers to the quadtree and uses it to only render the ones that are inside the viewport.
+      <div id="markers">
+      </div>
+		</div>
+		<script src="demo.js"></script>
+	</body>
+</html>
