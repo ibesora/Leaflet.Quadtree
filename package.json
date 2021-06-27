@@ -20,14 +20,14 @@
     "quadtree"
   ],
   "dependencies": {
-    "leaflet": "1.0.x"
+    "leaflet": "^1.6.0"
   },
   "devDependencies": {
-    "jsdom": "9.12.x",
-    "jsdom-global": "2.1.x",
-    "mocha":"3.2.x",
-    "nyc":"10.2.x",
-    "coveralls":"2.13.x"
-  }, 
+    "jsdom": "^9.12.0",
+    "jsdom-global": "^2.1.1",
+    "mocha": "^7.0.1",
+    "nyc": "^15.0.0",
+    "coveralls": "^3.0.9"
+  },
   "license": "BEERWARE"
 }
